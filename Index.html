@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ELECTRO | Online store</title>
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+  <!---------------Logo and Top ribbon---------->
+  <div class="row">
+    <div class="col_1-1">
+      <div class="logo">
+        <a href="Index.html"><img src="graphics\logo.png" alt="Logo" style="float: left;" width="100%" ></a>
+        </div>
+    </div>
+    <div class="col_1-2">
+      <button class="button1">
+        <div class="icon-bar">
+          <a class="active" href="Index.html"><i class="fa fa-home"></i></a> 
+          <a href="mailto:pramudithajayarathna@gamil.com? subject=Regarding Electro"><i class="fa fa-envelope"></i></a> 
+          <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="callto:+4769690952"><i class="fa fa-phone"></i></a>
+          <a href="login.html" target="_blank"><i class="fa fa-user"></i></a>
+        </div>
+      </button> 
+      <div class="tab">
+        <div class="menu">
+          <ul style="float:right;">
+              <li><a  href="Index.html">Home</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#pages">Pages</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+ <!--------------dropdown menu and search bar---------------->
+    <div class="dropdown"style="float:left;">
+        <button class="dropbtn"><i class="fa fa-bars"></i>&nbsp;&nbsp;All Categories </button>
+        <div class="dropdown-content">
+          <a href="#">Desktop Computers</a>
+          <a href="#">Laptop Computers</a>
+          <a href="#">Notebook Computers</a>
+          <a href="#">Smart Phones</a>
+          <a href="#">Smart whaches</a>
+          <a href="#">Ear Phones</a>
+          <a href="#">Computer parts</a>
+          <a href="#">Smart Phone Parts</a>
+          <a href="#">Accessories</a>
+        </div>
+    </div>
+      
+    <div class="dropdown2"style="float:left;">
+          <button class="dropbtn2"><i class="fa fa-bars">&nbsp;&nbsp;</i>All Brands </button>
+          <div class="dropdown-content2">
+              <a href="#">Samsung</a>
+              <a href="#">Asus</a>
+              <a href="#">Apple</a>
+              <a href="#">Sony</a>
+              <a href="#">Huawei</a>
+              <a href="#">Xiaomi</a>
+              <a href="#">HP</a>
+              <a href="#">Dell</a>
+            
+          </div>
+    </div>
+      <div class="search-container">
+          <form action="/action_page.php" target="_blank">
+            <input type="text" placeholder="What do you need?" name="search">
+            <button class="search" type="submit">Search</button>
+          </form>
+      </div>
+
+      <!---------Featured Categories------>
+   
+      <div class="small_container" style="margin-top: 200px;">
+        <h2 class="title">Featured Categories</h2>
+        <div class="floting_pic">
+          <div class="pic">
+          <img src="graphics\computers.jfif" alt="Computers"  onclick="show_alert('Computers')" style="width:100%"><p>Computers</p>
+          <a href="" class="exp_btn"> Explore now &#8594</a>
+          </div>
+          <div class="pic">
+          <img src="graphics\phones.jfif" alt="Smart Phones" onclick="show_alert('Smart Phones')"  style="width:100%"><p>Smart Phones</p>
+          <a href="" class="exp_btn"> Explore now &#8594</a>
+          </div>
+          <div class="pic">
+          <img src="graphics\watch.jfif" alt="Smart watchs" onclick="show_alert('Smart Watchs')" style="width:100%"><p>Smart Watchs</p>
+          <a href="" class="exp_btn"> Explore now &#8594</a>
+          </div>
+        </div>
+      </div>
+<!---------------Featured products----->
+    <div class="featured">
+      <div class="small_container2">
+        <h2 class="title">Featured Products</h2>
+        <div class="floting_pic2">
+          <div class="pic2">
+          <img src="graphics\Asus.png" alt="Item" onclick="show_alert('ZenBook Duo 14')" style="width:100%">
+          <h4>ZenBook Duo 14</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </div>
+          <p>LKR 300,000.00</p>
+          </div>
+          <div class="pic2">
+          <img src="graphics\smw.jfif" alt="Item" onclick="show_alert('New DZ09')" style="width:100%"><h4>New DZ09</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>LKR 3,000.00</p>
+          </div>
+          <div class="pic2">
+          <img src="graphics\y6.jfif" alt="Item" style="width:100%" onclick="show_alert('Huawei Y6 32GB')"><h4>Huawei Y6 32GB</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-full"></i>
+          </div>
+          <p>LKR 35,000.00</p>
+          </div>
+          <div class="pic2">
+            <img src="graphics\Asus_mon.png" alt="Item" style="width:100%" onclick="show_alert('ASUS BE229QLB Business Monitor')">
+            <h4>ASUS BE229QLB Business Monitor</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-full"></i>
+            </div>
+            <p>LKR 40,000.50</p>
+            </div>
+            <div class="pic2">
+              <img src="graphics\e4n.jpg" alt="Item" style="width:100%" onclick="show_alert('NuForce BE6i Superior Sounding Bluetooth Earphone')">
+              <h4>NuForce BE6i Superior Sounding Bluetooth Earphone</h4>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <p>LKR 1,050.00</p>
+              </div>
+              <div class="pic2">
+                <img src="graphics\mb.jfif" alt="Item" style="width:100%" onclick="show_alert('ASUS ROG Strix Z490-F Gaming LGA 1200 ATX')">
+                <h4>ASUS ROG Strix Z490-F Gaming LGA 1200 ATX</h4>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <p>LKR 63,500.00</p>
+                </div>
+        </div>
+      </div>
+    </div>
+ 
+      <!-------- offer-------->
+      <div class="offer">
+        <div class="small-container" >
+            <div class="floting_pic" >
+              <div class="Offer_pic">
+                <img src="graphics\Fwatch.png" alt="offer" class="offer-img" onclick="show_alert('Apple Watch 7 Series')">
+              </div>
+              <div class="offer_dis" >
+                <div class="description">
+                  <p><br>Exclusively available on ELECTRO</p>
+                  <h1>Apple Watch 7 Series</h1>
+                  <small>The Apple Watch 7 series watch is more powerful than the previous one.
+                     More features are available here and the camera quality has increased.</small>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <p>LKR 25,700.00</p>
+                    <a href="" class="exp_btn"> Buy now &#8594</a>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    <div class="wallpaper"> 
+      <div class="buy_lap">
+          <h3 class="go_lap">Buy Your laptop now.</h3>
+          <p>ELECTRO offers you the best laptops of highly recognized brands.
+            <br>You can get a 25% discount on any laptop.
+            <br>Don't be late</p>
+            <a href="" class="buy_btn"> Buy now &#8594</a>
+        </div>
+    </div>  
+  <!--------Footer------->
+  <div class="footer">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and iso mobile phone.</p>
+          <div class="app-logo">
+            <img src="graphics/store.png" alt="">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="graphics/Initial Fashion Logo.gif" alt="logo" style="width: 40%;">
+          <p>Our Purpose Is To Sustainably Make the Pleasure and Benifits of Quality Products To The Many
+            <br><br> Copyright ©2021 ELECTRO online store, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="footer-col-3">
+          <ul>
+            <h3>Usefull Links</h3>
+            <li><a href="#">Coupons</a></li>
+            <li><a href="#">Blog Post</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Join Affiliate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-3">
+          <ul>
+            <h3>Follow us</h3>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+  </div>
+
+<script src="Index.js"></script>
+</body>
+
+</html>
